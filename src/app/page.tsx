@@ -35,7 +35,7 @@ async function Inicio() {
     <div className='grid grid-cols-3 gap-3 mt-5'>
       {
         tasksPrisma.map(task =>(
-          <TaskCard task={task} />
+          <TaskCard task={task} key={task.id}  />
         ))
       }
     </div>
